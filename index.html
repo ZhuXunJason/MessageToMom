@@ -14,51 +14,80 @@
         body {
             font-family: 'Georgia', serif;
             background: url("illustration.webp") no-repeat center center/cover;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 10px;
         }
 
         .card {
-            width: 90%;
-            max-width: 500px;
-            background-color: rgba(255, 255, 255, 0.9);
+            width: 95%;
+            max-width: 450px;
+            background-color: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            padding: 20px;
             text-align: center;
             backdrop-filter: blur(5px);
             border: 2px solid #f6d1f5;
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
             color: #db4d88;
-            font-family: 'Comic Sans MS', serif;
+            font-family: 'Palatino', serif;
         }
 
         p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+            font-size: 1rem;
+            line-height: 1.5;
             color: #333;
-            margin-bottom: 15px;
-            text-align: start;
+            margin-bottom: 10px;
+            text-align: justify;
         }
 
         .love {
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #e63946;
-            text-align: center;
+            margin-top: 10px;
         }
 
         .signature {
-            margin-top: 20px;
+            margin-top: 15px;
             font-style: italic;
             font-size: 1rem;
-            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 5px;
+            }
+
+            .card {
+                padding: 15px;
+                border-width: 1px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.4;
+            }
+
+            .love {
+                font-size: 1.1rem;
+            }
+
+            .signature {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -66,11 +95,11 @@
 <div class="card">
     <h1>Dear Mom</h1>
     <p>
-        I’m excessively sorry for forgetting your birthday.It was truly thoughtless of me.I can imagine how hurt you felt, and not until now did I realize
+        I’m excessively sorry for forgetting your birthday. It was truly thoughtless of me. I can imagine how hurt you felt, and not until now did I realize
         that I was neglecting your feelings since I went to college.
         <br><br>
         I want you to know that maybe I don't express it often, maybe I still make you upset, but I love you, and I will permanently and unconditionally love you.
-        I sincerely hope you are blissfully happy on birthday, on special days and on every single day.
+        I sincerely hope you are blissfully happy on your birthday, on special days, and on every single day.
     </p>
     <p class="love">I love you so much, Mom. 💖</p>
     <p class="signature">With all my heart,<br> Your beloved son Jason 🐷</p>
